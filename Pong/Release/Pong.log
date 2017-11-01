@@ -1,0 +1,19 @@
+﻿  Main.cpp
+Main.cpp(56): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+Main.cpp(57): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+Main.cpp(76): warning C4996: 'sf::Text::setColor': was declared deprecated
+  D:\C++\SFML\External Libraries\SFML\include\SFML/Graphics/Text.hpp(177): note: see declaration of 'sf::Text::setColor'
+Main.cpp(83): warning C4996: 'sf::Text::setColor': was declared deprecated
+  D:\C++\SFML\External Libraries\SFML\include\SFML/Graphics/Text.hpp(177): note: see declaration of 'sf::Text::setColor'
+Main.cpp(90): warning C4996: 'sf::Text::setColor': was declared deprecated
+  D:\C++\SFML\External Libraries\SFML\include\SFML/Graphics/Text.hpp(177): note: see declaration of 'sf::Text::setColor'
+Main.cpp(97): warning C4996: 'sf::Text::setColor': was declared deprecated
+  D:\C++\SFML\External Libraries\SFML\include\SFML/Graphics/Text.hpp(177): note: see declaration of 'sf::Text::setColor'
+Main.cpp(102): warning C4996: 'sf::Text::setColor': was declared deprecated
+  D:\C++\SFML\External Libraries\SFML\include\SFML/Graphics/Text.hpp(177): note: see declaration of 'sf::Text::setColor'
+  Generating code
+  1 of 133 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Pong.vcxproj -> D:\C++\SFML\Pong\Release\Pong.exe
