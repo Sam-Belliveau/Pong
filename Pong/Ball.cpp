@@ -61,7 +61,7 @@ void Ball::update(Player * player, Bot * bot, float& MAX_ANGLE, float& SPEED_JUM
 	}
 
 	if (pos.y + size > player->pos.y - player->paddleHeight &&
-		pos.y < player->pos.y) //Checks to see if it is on same y as player
+		pos.y - size < player->pos.y + player->paddleHeight) //Checks to see if it is on same y as player
 	{
 		if (pos.x - size < player->pos.x + player->paddleWidth &&
 			pos.x + size > player->pos.x - player->paddleWidth) // if it is on same x as player
@@ -79,7 +79,7 @@ void Ball::update(Player * player, Bot * bot, float& MAX_ANGLE, float& SPEED_JUM
 		}
 	} 
 	if (pos.y - size < bot->pos.y + bot->paddleHeight &&
-		pos.y > bot->pos.y) //Checks to see if it is on same y as bot
+		pos.y + size> bot->pos.y - player->paddleHeight) //Checks to see if it is on same y as bot
 	{
 		if (pos.x - size < bot->pos.x + bot->paddleWidth &&
 			pos.x + size > bot->pos.x - bot->paddleWidth) // if it is on same x as bot
