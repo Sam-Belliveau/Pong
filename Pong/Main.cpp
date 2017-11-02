@@ -1,4 +1,5 @@
 #include "SFML/Graphics.hpp"
+#include <iostream>
 #include "Bot.h"
 #include "Ball.h"
 #include "Player.h"
@@ -38,6 +39,8 @@ int main()
 	printf("	4. Hard\n");
 	printf("	5. Brutal\n");
 	printf("	6. Imposible\n");
+	printf("\nFor The Hackers Out There\n");
+	printf("Here Are The Memory Adresses:\n");
 
 
 	sf::ContextSettings settings;
@@ -102,6 +105,29 @@ int main()
 	botScore.setColor(text);
 	botScore.setCharacterSize(height >> 3);
 	botScore.setPosition(sf::Vector2f(0, (height >> 1) - ((lineHeight << 1) + (height >> 3) + (height >> 4))));
+
+	printf("	----=YOUR VARIABLES=----\n");
+	printf("	Your Score (UNSIGNED INT):\n		%p\n\n", (void *)&ball.playerScore);
+	printf("	Your Speed (FLOAT):\n		%p\n\n", (void *)&player.vel);
+	printf("	Your Position X (FLOAT):\n		%p\n\n", (void *)&player.pos.x);
+	printf("	Your Position Y (FLOAT):\n		%p\n\n", (void *)&player.pos.y);
+	printf("	Your Width (FLOAT):\n		%p\n\n", (void *)&player.paddleWidth);
+	printf("	Your Height (FLOAT):\n		%p\n\n\n", (void *)&player.paddleHeight);
+
+	printf("	----=BOT VARIABLES=----\n");
+	printf("	Bot's Score(UNSIGNED INT):\n		%p\n\n", (void *)&ball.botScore);
+	printf("	Bot's Speed (FLOAT):\n		%p\n\n", (void *)&bot.vel);
+	printf("	Bot's Position X (FLOAT):\n		%p\n\n", (void *)&bot.pos.x);
+	printf("	Bot's Position Y (FLOAT):\n		%p\n\n", (void *)&bot.pos.y);
+	printf("	Bot's Width (FLOAT):\n		%p\n\n", (void *)&bot.paddleWidth);
+	printf("	Bot's Height (FLOAT):\n		%p\n\n\n", (void *)&bot.paddleHeight);
+
+	printf("	----=BALL VARIABLES=----\n");
+	printf("	Ball's Position X (FLOAT):\n		%p\n\n", (void *)&ball.pos.x);
+	printf("	Ball's Position Y (FLOAT):\n		%p\n\n", (void *)&ball.pos.y);
+	printf("	Ball's Velocity X (FLOAT):\n		%p\n\n", (void *)&ball.vel.x);
+	printf("	Ball's Velocity Y (FLOAT):\n		%p\n\n", (void *)&ball.vel.y);
+	printf("	Ball's Size (FLOAT):\n	%p", (void *)&ball.size);
 
 	while (window.isOpen())
 	{
