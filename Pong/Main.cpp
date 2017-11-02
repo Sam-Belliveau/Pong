@@ -13,15 +13,15 @@ const sf::Color  line(128, 128, 128);
 const sf::Color  text(196, 196, 196);
 const sf::Color  back(32, 32, 32);
 
-float MAX_ANGLE = 1.5;
+float MAX_ANGLE = 1.f;
 float SPEED_JUMP = (1.f + (1.f / 28.f));
-float BOT_ANGLE_MOD = (23.f / 24.f);
-float HIT_ANGLE_MOD = 8.f;
+float BOT_ANGLE_MOD = (31.f / 32.f);
+float HIT_ANGLE_MOD = 6.f;
 
 const std::string modes[6] = { "1 - Super Easy", "2 - Easy", "3 - Normal", "4 - Hard", "5 - Brutal", "6 - Imposible" };
-const float maxAngleSet[6] = { 1.f, 1.f, 2.f, 2.f, 3.f, 3.f };
+const float maxAngleSet[6] = { 0.5f, 1.f, 1.5f, 2.f, 2.5f, 3.f };
 const float speedJumpSet[6] = { (1.f + (1.f / 64.f)), (1.f + (1.f / 32.f)), (1.f + (1.f / 28.f)), (1.f + (1.f / 24.f)), (1.f + (1.f / 20.f)), (1.f + (1.f / 16.f)) };
-const float botAngleMod[6] = { (3.f / 4.f), (7.f / 8.f), (15.f / 16.f), (31.f / 32.f), (63.f / 64.f), 1 };
+const float botAngleMod[6] = { (7.f / 8.f), (15.f / 16.f), (31.f / 32.f), 1, 1 + (1.f / 64.f), 1 + (1.f / 24.f) };
 const float hitAngleMod[6] = { 8, 8, 6, 6, 4, 4 };
 
 
